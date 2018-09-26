@@ -1,0 +1,6 @@
+framework module Pods_PromptRatingExample {
+  umbrella header "Pods-PromptRatingExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

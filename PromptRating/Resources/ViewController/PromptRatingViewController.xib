@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromptRatingViewController" customModule="PromptRating" customModuleProvider="target">
+            <connections>
+                <outlet property="illustrationImageView" destination="Ofn-KP-rZw" id="4VL-Uh-UFB"/>
+                <outlet property="logoImageView" destination="1Pw-9E-pgX" id="dAl-rZ-qtf"/>
+                <outlet property="negativeButton" destination="MdO-2L-i6p" id="keM-9y-ccJ"/>
+                <outlet property="positiveButton" destination="AB9-Lx-vAg" id="0jx-Si-VJS"/>
+                <outlet property="textLabel" destination="bbp-DF-5uZ" id="xs4-YW-mPZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdO-2L-i6p">
+                    <rect key="frame" x="10" y="607" width="355" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="iD1-mI-o1i"/>
+                    </constraints>
+                    <state key="normal" title="NO ME GUSTA"/>
+                    <connections>
+                        <action selector="negativeButtonPressed:" destination="-1" eventType="touchUpInside" id="cVs-Zh-4WI"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infojobsBlueLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1Pw-9E-pgX">
+                    <rect key="frame" x="109" y="141.5" width="156" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ADS-hX-OMm"/>
+                        <constraint firstAttribute="width" constant="156" id="xsn-q8-uwU"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB9-Lx-vAg">
+                    <rect key="frame" x="10" y="547" width="355" height="50"/>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.53333333329999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="tSQ-wp-Laa"/>
+                    </constraints>
+                    <state key="normal" title="SÍ, ME ENCANTA">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="positiveButtonPressed:" destination="-1" eventType="touchUpInside" id="e4Z-yh-cIx"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ofn-KP-rZw">
+                    <rect key="frame" x="83" y="196.5" width="208" height="174"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="208" id="3Fb-BG-iUZ"/>
+                        <constraint firstAttribute="height" constant="174" id="aRs-0i-EhW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Te gusta la App de Infojobs?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbp-DF-5uZ">
+                    <rect key="frame" x="75.5" y="398.5" width="224" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MdO-2L-i6p" secondAttribute="bottom" constant="10" id="4v9-Hc-1rG"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bbp-DF-5uZ" secondAttribute="trailing" constant="40" id="4yP-Lp-3ag"/>
+                <constraint firstItem="AB9-Lx-vAg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="7mW-3w-Gyb"/>
+                <constraint firstItem="Ofn-KP-rZw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="E1G-vt-7Wo"/>
+                <constraint firstAttribute="trailing" secondItem="AB9-Lx-vAg" secondAttribute="trailing" constant="10" id="Jv4-of-oHg"/>
+                <constraint firstItem="Ofn-KP-rZw" firstAttribute="top" secondItem="1Pw-9E-pgX" secondAttribute="bottom" constant="15" id="Ncl-NH-nHx"/>
+                <constraint firstItem="1Pw-9E-pgX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QWo-fe-rOb"/>
+                <constraint firstItem="bbp-DF-5uZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ZnY-pS-9yH"/>
+                <constraint firstItem="Ofn-KP-rZw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="bRF-bD-byB"/>
+                <constraint firstItem="MdO-2L-i6p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="eEu-s8-l9d"/>
+                <constraint firstItem="bbp-DF-5uZ" firstAttribute="top" secondItem="Ofn-KP-rZw" secondAttribute="bottom" constant="28" id="huy-OH-61y"/>
+                <constraint firstAttribute="trailing" secondItem="MdO-2L-i6p" secondAttribute="trailing" constant="10" id="ogN-IZ-hmG"/>
+                <constraint firstItem="MdO-2L-i6p" firstAttribute="top" secondItem="AB9-Lx-vAg" secondAttribute="bottom" constant="10" id="uVu-Y6-EXY"/>
+                <constraint firstItem="bbp-DF-5uZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wFa-vK-mFp"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="infojobsBlueLogo" width="157" height="40"/>
+    </resources>
+</document>

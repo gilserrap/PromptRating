@@ -1,5 +1,5 @@
 
-⚠️ Use the [native ratings UI](https://developer.apple.com/app-store/ratings-and-reviews/), nowadays it is against the app store rules to present a custom UI before the native one⚠️
+⚠️ Use the [native ratings UI](https://developer.apple.com/app-store/ratings-and-reviews/), nowadays it is against the app store rules to present a custom UI before the native one ⚠️
 
 # Prompt Rating
 

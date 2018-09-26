@@ -1,4 +1,6 @@
 
+⚠️ Use the [native ratings UI](https://developer.apple.com/app-store/ratings-and-reviews/), nowadays it is against the app store rules to present a custom UI before the native rating UI⚠️
+
 # Prompt Rating
 
 If you are a bit baroque, you will love this.
@@ -127,5 +129,5 @@ Watch the example app to see how you can configure this screen.
 
 ## Final thoughts
 
-This library was concieved before the native UI for prompt ratings was released, nowadays it makes a lot more sense to just use that, and it also gives better results:
+This library was concieved before the native UI for prompt ratings was released, nowadays it is against the app store rules to present a custom UI before the native rating UI
 [](https://developer.apple.com/app-store/ratings-and-reviews/)
